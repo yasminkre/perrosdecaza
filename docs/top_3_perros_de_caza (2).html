@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 3 Razas de Perros de Caza</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        hunter: {
+                            50: '#f2f7f4',
+                            100: '#e1ede5',
+                            500: '#2d6a4f',
+                            700: '#1b4332',
+                            900: '#081c15',
+                        },
+                        amberGold: '#d4a373',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+        }
+        .placeholder-box {
+            background-image: repeating-linear-gradient(45deg, #f8f9fa, #f8f9fa 15px, #edf2f0 15px, #edf2f0 30px);
+        }
+    </style>
+</head>
+<body class="bg-stone-100 text-stone-800 font-sans antialiased selection:bg-hunter-500 selection:text-white min-h-screen flex flex-col">
+
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-50 glass-card shadow-sm border-b border-stone-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="bg-hunter-700 text-white p-2.5 rounded-xl shadow-md">
+                    <i class="fa-solid fa-dog text-lg"></i>
+                </div>
+                <span class="font-extrabold text-xl tracking-tight text-hunter-900">Perros<span class="text-amberGold">DeCaza</span></span>
+            </div>
+            
+            <nav class="flex space-x-4 sm:space-x-6 font-semibold text-xs sm:text-sm text-stone-600">
+                <a href="#labrador" class="hover:text-hunter-700 transition-colors">1. Labrador</a>
+                <a href="#pointer" class="hover:text-hunter-700 transition-colors">2. Pointer Alemán</a>
+                <a href="#beagle" class="hover:text-hunter-700 transition-colors">3. Beagle</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="bg-hunter-900 text-white py-14 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <span class="inline-flex items-center gap-2 bg-hunter-700/80 text-emerald-300 text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-full border border-emerald-500/30 mb-4">
+                <i class="fa-solid fa-award text-amberGold"></i> Clasificación Canina
+            </span>
+            <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight leading-tight mb-4">
+                Top 3 Razas de <span class="text-amberGold">Perros de Caza</span>
+            </h1>
+            <p class="text-base sm:text-lg text-stone-300 max-w-2xl mx-auto font-light">
+                Descubre las tres razas caninas históricamente más destacadas y especializadas para la actividad de caza en todo el mundo.
+            </p>
+        </div>
+    </section>
+
+    <!-- Main Content Area -->
+    <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-12 flex-grow">
+
+        <!-- Top 1: Labrador Retriever -->
+        <article id="labrador" class="bg-white rounded-3xl shadow-lg border border-stone-200 overflow-hidden hover:shadow-xl transition-shadow">
+            <div class="grid grid-cols-1 lg:grid-cols-12">
+                <div class="lg:col-span-5 relative min-h-[280px] bg-stone-100 flex items-center justify-center p-4">
+                    <img id="img-caza1" 
+                         src="images/caza1.jpg" 
+                         alt="Labrador Retriever" 
+                         onerror="showFallback('fallback-caza1', 'img-caza1')" 
+                         class="w-full h-full object-cover absolute inset-0">
+                    
+                    <div id="fallback-caza1" class="placeholder-box w-full h-full min-h-[260px] rounded-2xl border-2 border-dashed border-hunter-500/40 p-6 flex flex-col items-center justify-center text-center relative z-10 hidden">
+                        <div class="w-14 h-14 bg-hunter-100 text-hunter-700 rounded-2xl flex items-center justify-center mb-3 text-2xl shadow-sm">
+                            <i class="fa-solid fa-image"></i>
+                        </div>
+                        <span class="text-xs font-bold uppercase tracking-wider text-hunter-700 mb-1">Imagen Pendiente</span>
+                        <code class="bg-hunter-900 text-amber-300 font-mono text-xs px-3 py-1.5 rounded-lg shadow-sm">images/caza1.jpg</code>
+                    </div>
+
+                    <div class="absolute top-3 left-3 bg-amberGold text-stone-900 font-extrabold px-3 py-1 rounded-lg text-xs shadow-md z-20 flex items-center gap-1">
+                        <i class="fa-solid fa-crown text-xs"></i> #1 Cobro de Caza
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7 p-6 sm:p-8 flex flex-col justify-between">
+                    <div>
+                        <div class="text-hunter-500 font-extrabold text-xs uppercase tracking-wider mb-1">Especialidad: Aves y Agua</div>
+                        <h2 class="text-2xl font-extrabold text-stone-900 mb-3">1. Labrador Retriever</h2>
+                        <p class="text-stone-600 text-sm leading-relaxed mb-6">
+                            Es una de las razas más utilizadas en la historia para la caza de cobranza (cobro de presas acuáticas y en tierra). Cuenta con un pelaje denso e impermeable, un excelente olfato y una "boca blanda" que permite traer las piezas intactas.
+                        </p>
+                        
+                        <div class="grid grid-cols-2 gap-3 mb-4">
+                            <div class="bg-stone-50 p-3 rounded-xl border border-stone-100">
+                                <span class="text-xs text-stone-400 block font-medium">Origen</span>
+                                <span class="text-xs font-bold text-stone-700">Canadá / Reino Unido</span>
+                            </div>
+                            <div class="bg-stone-50 p-3 rounded-xl border border-stone-100">
+                                <span class="text-xs text-stone-400 block font-medium">Cualidad Clave</span>
+                                <span class="text-xs font-bold text-stone-700">Cobro en agua y tierra</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- Top 2: Pointer Alemán -->
+        <article id="pointer" class="bg-white rounded-3xl shadow-lg border border-stone-200 overflow-hidden hover:shadow-xl transition-shadow">
+            <div class="grid grid-cols-1 lg:grid-cols-12">
+                <div class="lg:col-span-5 relative min-h-[280px] bg-stone-100 flex items-center justify-center p-4 lg:order-2">
+                    <img id="img-caza2" 
+                         src="images/caza2.jpg" 
+                         alt="Pointer Alemán" 
+                         onerror="showFallback('fallback-caza2', 'img-caza2')" 
+                         class="w-full h-full object-cover absolute inset-0">
+                    
+                    <div id="fallback-caza2" class="placeholder-box w-full h-full min-h-[260px] rounded-2xl border-2 border-dashed border-hunter-500/40 p-6 flex flex-col items-center justify-center text-center relative z-10 hidden">
+                        <div class="w-14 h-14 bg-hunter-100 text-hunter-700 rounded-2xl flex items-center justify-center mb-3 text-2xl shadow-sm">
+                            <i class="fa-solid fa-image"></i>
+                        </div>
+                        <span class="text-xs font-bold uppercase tracking-wider text-hunter-700 mb-1">Imagen Pendiente</span>
+                        <code class="bg-hunter-900 text-amber-300 font-mono text-xs px-3 py-1.5 rounded-lg shadow-sm">images/caza2.jpg</code>
+                    </div>
+
+                    <div class="absolute top-3 right-3 bg-hunter-700 text-white font-extrabold px-3 py-1 rounded-lg text-xs shadow-md z-20 flex items-center gap-1">
+                        #2 Polivalente
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7 p-6 sm:p-8 flex flex-col justify-between lg:order-1">
+                    <div>
+                        <div class="text-hunter-500 font-extrabold text-xs uppercase tracking-wider mb-1">Especialidad: Muestra y Rastro</div>
+                        <h2 class="text-2xl font-extrabold text-stone-900 mb-3">2. Pointer Alemán de Pelo Corto</h2>
+                        <p class="text-stone-600 text-sm leading-relaxed mb-6">
+                            Considerado el perro de caza más completo e integral. Tiene una capacidad instintiva para detenerse y "señalar" la ubicación exacta de la presa con su cuerpo, además de poseer gran resistencia física en todo tipo de terrenos.
+                        </p>
+                        
+                        <div class="grid grid-cols-2 gap-3 mb-4">
+                            <div class="bg-stone-50 p-3 rounded-xl border border-stone-100">
+                                <span class="text-xs text-stone-400 block font-medium">Origen</span>
+                                <span class="text-xs font-bold text-stone-700">Alemania</span>
+                            </div>
+                            <div class="bg-stone-50 p-3 rounded-xl border border-stone-100">
+                                <span class="text-xs text-stone-400 block font-medium">Cualidad Clave</span>
+                                <span class="text-xs font-bold text-stone-700">Muestra e instinto</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- Top 3: Beagle -->
+        <article id="beagle" class="bg-white rounded-3xl shadow-lg border border-stone-200 overflow-hidden hover:shadow-xl transition-shadow">
+            <div class="grid grid-cols-1 lg:grid-cols-12">
+                <div class="lg:col-span-5 relative min-h-[280px] bg-stone-100 flex items-center justify-center p-4">
+                    <img id="img-caza3" 
+                         src="images/caza3.jpg" 
+                         alt="Beagle" 
+                         onerror="showFallback('fallback-caza3', 'img-caza3')" 
+                         class="w-full h-full object-cover absolute inset-0">
+                    
+                    <div id="fallback-caza3" class="placeholder-box w-full h-full min-h-[260px] rounded-2xl border-2 border-dashed border-hunter-500/40 p-6 flex flex-col items-center justify-center text-center relative z-10 hidden">
+                        <div class="w-14 h-14 bg-hunter-100 text-hunter-700 rounded-2xl flex items-center justify-center mb-3 text-2xl shadow-sm">
+                            <i class="fa-solid fa-image"></i>
+                        </div>
+                        <span class="text-xs font-bold uppercase tracking-wider text-hunter-700 mb-1">Imagen Pendiente</span>
+                        <code class="bg-hunter-900 text-amber-300 font-mono text-xs px-3 py-1.5 rounded-lg shadow-sm">images/caza3.jpg</code>
+                    </div>
+
+                    <div class="absolute top-3 left-3 bg-stone-800 text-white font-extrabold px-3 py-1 rounded-lg text-xs shadow-md z-20 flex items-center gap-1">
+                        #3 Caza Menor
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7 p-6 sm:p-8 flex flex-col justify-between">
+                    <div>
+                        <div class="text-hunter-500 font-extrabold text-xs uppercase tracking-wider mb-1">Especialidad: Rastreo Terrestre</div>
+                        <h2 class="text-2xl font-extrabold text-stone-900 mb-3">3. Beagle</h2>
+                        <p class="text-stone-600 text-sm leading-relaxed mb-6">
+                            Famoso por tener uno de los olfatos más agudos de todas las razas caninas. Ha sido históricamente empleado para la caza menor (especialmente de conejos y liebres) mediante el seguimiento persistente de rastros en tierra.
+                        </p>
+                        
+                        <div class="grid grid-cols-2 gap-3 mb-4">
+                            <div class="bg-stone-50 p-3 rounded-xl border border-stone-100">
+                                <span class="text-xs text-stone-400 block font-medium">Origen</span>
+                                <span class="text-xs font-bold text-stone-700">Reino Unido</span>
+                            </div>
+                            <div class="bg-stone-50 p-3 rounded-xl border border-stone-100">
+                                <span class="text-xs text-stone-400 block font-medium">Cualidad Clave</span>
+                                <span class="text-xs font-bold text-stone-700">Olfato infalible</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-stone-900 text-stone-400 text-xs py-8 border-t border-stone-800 mt-auto">
+        <div class="max-w-5xl mx-auto px-4 text-center">
+            <p class="font-semibold text-stone-300 mb-1"><i class="fa-solid fa-dog text-amberGold"></i> Top 3 Perros de Caza</p>
+            <p class="text-stone-500">Presentación de razas caninas especializadas.</p>
+        </div>
+    </footer>
+
+    <!-- Image Fallback Script -->
+    <script>
+        function showFallback(fallbackId, imgId) {
+            const fallbackEl = document.getElementById(fallbackId);
+            const imgEl = document.getElementById(imgId);
+            if (fallbackEl) {
+                fallbackEl.classList.remove('hidden');
+            }
+            if (imgEl) {
+                imgEl.classList.add('hidden');
+            }
+        }
+    </script>
+</body>
+</html>
